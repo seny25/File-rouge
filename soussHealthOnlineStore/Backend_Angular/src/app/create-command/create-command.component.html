@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3" style=" border-color: rgb(65, 65, 245)" style="border: 1px;" >
+    <h3>Nouveau Command</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group"> 
+            <label> Id Commande </label>
+            <input type="text"  class="form-control" id ="command_id"
+                [(ngModel)] = "command.command_id" name = "command_id">
+        </div>
+    
+        <div class="form-group"> 
+            <label>Date Commande </label>
+            <input type="date"  class="form-control" id ="date_command"
+                [(ngModel)] = "command.date_command" name = "date_command">
+        </div>
+    
+        <div class="form-group"> 
+            <label>Prix Total </label>
+            <input type="number"  class="form-control" id ="prixTotal"
+                [(ngModel)] = "command.prixTotal" name = "prixTotal">
+        </div>
+    
+    <br> 
+    <td>
+        
+       
+        <button class="btn btn-success" type="submit" style="margin-right: 300px">Submit </button>
+        
+    
+    
+    </td>
+    
+    
+    
+    </form>
+    

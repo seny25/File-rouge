@@ -17,6 +17,9 @@ import { CreateCategorieComponent } from './create-categorie/create-categorie.co
 import { UpdateCategorieComponent } from './update-categorie/update-categorie.component';
 import { CategorieDetailsComponent } from './categorie-details/categorie-details.component';
 import { CategorieListComponent } from './categorie-list/categorie-list.component';
+import { CreateCommandComponent } from './create-command/create-command.component';
+import { UpdateCommandComponent } from './update-command/update-command.component';
+import { CommandListComponent } from './command-list/command-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +35,10 @@ import { CategorieListComponent } from './categorie-list/categorie-list.componen
     UpdateCategorieComponent,
     CategorieDetailsComponent,
     CategorieListComponent,
+   
+    CreateCommandComponent,
+    UpdateCommandComponent,
+    CommandListComponent,
     
   ],
   imports: [

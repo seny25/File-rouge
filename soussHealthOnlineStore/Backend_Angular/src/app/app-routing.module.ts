@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CategorieListComponent } from './categorie-list/categorie-list.component';
 import { CreateCategorieComponent } from './create-categorie/create-categorie.component';
+import { CreateCommandComponent } from './create-command/create-command.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ProduitListComponent } from './produit-list/produit-list.component';
 import { CreateProduitComponent } from './Produit/create-produit/create-produit.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
 {path: 'produits',component: ProduitListComponent},
 {path: 'update-produit/:id', component: UpdateProduitComponent},
 {path: 'create-categorie',component: CreateCategorieComponent},
-{path: 'categories', component: CategorieListComponent}
+{path: 'categories', component: CategorieListComponent},
+{ path: 'create-command' , component: CreateCommandComponent}
 ];
 
 @NgModule({
