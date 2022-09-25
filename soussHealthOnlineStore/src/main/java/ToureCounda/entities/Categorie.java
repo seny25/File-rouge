@@ -31,15 +31,15 @@ import lombok.ToString;
 		 property = "categoryId")
 public class Categorie {
 
-	   @Id
+	   @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	
 
 	private Long categoryId;
 	
-	@NotEmpty 
+	
 	private String name;
 
-	@NotEmpty 
+	
 	private String descriptif;
 	
 	

@@ -30,6 +30,7 @@ export class ProduitListComponent implements OnInit {
 
   }
 
+
   updateProduit(produitId: number){
     this.router.navigate(['update-produit', produitId]);
   }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,7 @@ import ToureCounda.services.CategorieServiceImpl;
 
 @RestController
 @EnableAutoConfiguration
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping(value = "/categorie")
 public class CategorieController {
 	@Autowired
@@ -37,26 +39,26 @@ public class CategorieController {
 	
 	
 //	@PreAuthorize("ADMIN")
-	@PostMapping("/admin/save")
+	@PostMapping
 public Categorie save(@RequestBody Categorie categorie  ) {
 		service.save(categorie);
 		return categorie;
 	}
 	
-	@PutMapping("/admin/update")
+	@PutMapping
 public Categorie update(@RequestBody Categorie categorie  ) {
 		service.save(categorie);
 		return categorie;
 	}
 	
-	@GetMapping("/client/categories")
+	@GetMapping
 	public List<Categorie> list(){
 		return service.getAll();
 		
 	}
 	
 	
-	@GetMapping("/client/categorie/{id}")
+	@GetMapping("{id}")
 	
 	public Categorie findById(@PathVariable Long id) {
 		

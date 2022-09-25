@@ -42,7 +42,7 @@ public class ProduitController {
 		return produit;
 	}
 	
-	@PutMapping("/admin/update")
+	@PutMapping()
 public Produit update(@RequestBody Produit produit  ) {
 		service.save(produit);
 		return produit;
@@ -55,7 +55,7 @@ public Produit update(@RequestBody Produit produit  ) {
 	}
 	
 	
-	@GetMapping("/client/produit/{id}")
+	@GetMapping("{id}")
 	
 	public Produit findById(@PathVariable Long id) {
 		

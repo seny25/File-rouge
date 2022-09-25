@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.headers().frameOptions().disable();
 		
 		//http.formLogin();
-		http.authorizeRequests().antMatchers("/refreshToken/**","/login/**","/profil/**,","/regester/**", "/client/**", "/user/**", "/auth/**","/produit/**").permitAll();
+		http.authorizeRequests().antMatchers("/refreshToken/**","/login/**","/profil/**,","/regester/**","/categorie/**", "/client/**", "/user/**", "/auth/**","/produit/**").permitAll();
 //		http.authorizeRequests().antMatchers(HttpMethod.POST,"/users/**").hasAuthority("ADMIN");
 //		http.authorizeRequests().antMatchers(HttpMethod.GET,"/users/**").hasAuthority("USER");
 		http.authorizeRequests().anyRequest().authenticated();

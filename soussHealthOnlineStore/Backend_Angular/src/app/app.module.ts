@@ -12,6 +12,11 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { CreateProduitComponent } from './Produit/create-produit/create-produit.component';
 import { CreateProduitclearComponent } from './Produit/create-produitclear/create-produitclear.component';
 import { ProduitListComponent } from './produit-list/produit-list.component';
+import { UpdateProduitComponent } from './update-produit/update-produit.component';
+import { CreateCategorieComponent } from './create-categorie/create-categorie.component';
+import { UpdateCategorieComponent } from './update-categorie/update-categorie.component';
+import { CategorieDetailsComponent } from './categorie-details/categorie-details.component';
+import { CategorieListComponent } from './categorie-list/categorie-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +27,11 @@ import { ProduitListComponent } from './produit-list/produit-list.component';
     CreateProduitComponent,
     CreateProduitclearComponent,
     ProduitListComponent,
+    UpdateProduitComponent,
+    CreateCategorieComponent,
+    UpdateCategorieComponent,
+    CategorieDetailsComponent,
+    CategorieListComponent,
     
   ],
   imports: [
